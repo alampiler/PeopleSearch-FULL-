@@ -1,0 +1,16 @@
+@font-face {
+  font-family: FiraSans;
+  src: url("../fonts/FiraSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Sans Narrow;
+  src: url("../fonts/PT_Sans-Narrow-Web-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: RobotoMono;
+  src: url("../fonts/RobotoMono-Regular.ttf") format("truetype");
+}
+
+
