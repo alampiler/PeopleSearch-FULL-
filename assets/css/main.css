@@ -7472,7 +7472,7 @@ body button {
   height: 8vw;
   width: 6vw; }
 
-.main_content .pagination li a.active{
+.main_content .pagination li.active a{
   background: #0060ff;
   color: #fff;
 }

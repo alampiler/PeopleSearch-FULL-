@@ -78,10 +78,9 @@ require_once "layouts/header.php";
        <?php endforeach ?>
         <nav aria-label="Pagination">
             <ul class="pagination text-center">
-                <li><a class="active" href="#" aria-label="Page 1">1</a></li>
+                <li class="active" ><a href="#" aria-label="Page 1">1</a></li>
                 <li><a href="#" aria-label="Page 2">2</a></li>
                 <li><a href="#" aria-label="Page 3">3</a></li>
-                <li><a href="#" aria-label="Page 4">4</a></li>
             </ul>
         </nav>
     </section>

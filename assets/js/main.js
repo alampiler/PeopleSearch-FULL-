@@ -55,6 +55,13 @@ $(document).ready(function () {
         ]
     });
 
+    $('.is-accordion-submenu-parent a span').click(function(){
+        var href = $(this).parent().attr('href');
+        console.log(href);
+        document.location.href = href;
+
+    });
+
     $(window).scroll(function () {
         if($(this).scrollTop() > 1400){
             $('.scrollUp').fadeIn().css('display', 'block');
@@ -82,6 +89,14 @@ $(document).ready(function () {
         $('.admin_material_content').addClass('active')
     });
 
+      $(function(){
+    $('.pagination li a').click(function(){
+      $(this).parent().addClass('active').siblings().removeClass('active');
+    });
+    $('.pagination li a').click(function(){
+      $(this).parent().addClass('active').siblings().removeClass('active');
+    })
+  });
 
     /*
     Create by: http://www.magisters.org/
@@ -125,25 +140,7 @@ $(document).ready(function () {
         return baseUrl + params;
     }
 
-    var page_pagination = $('.pagination > li > a');
-    var currentPage = getUrlParameter(window.location.href, 'page');
-
-    if(currentPage){
-        page_pagination = currentPage;
-    };
-
-    $('.pagination > li > a').click(function () {
-        let value = $(this).text();
-        $('.pagination > li > a').removeClass('active');
-        window.location.href = setUrlParameter(window.location.href, 'page', value);
-    });
-
-    $(function(){
-        $('.pagination > li > a').filter(function(){return this.href===location.href}).parent().addClass('active').siblings().removeClass('active');
-        $('.pagination > li > a').click(function(){
-            $(this).parent().addClass('active').siblings().removeClass('active');
-        });
-    });
+  
 
 });
 

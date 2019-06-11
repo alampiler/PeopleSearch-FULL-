@@ -51,7 +51,7 @@
         <div class="column small-12 medium-12 large-12 main_menu">
             <ul class="dropdown medium-vertical large-horizontal menu" data-responsive-menu="accordion large-dropdown">
                 <li class="is-active">
-                    <a href="peoplesearch?action=main" class="home">Головна</a>
+                    <a href="peoplesearch?action=main" class="home"><span>Головна</span></a>
                 </li>
                 <?php
                 $categories = get_categories();
@@ -65,7 +65,7 @@
                     <?php foreach($categories as $category): ?>
                     <?php if($category["cat_id"] == 1):?>
                         <li>
-                            <a href="/category.php?id=<?=$category["cat_id"]?>" class="search_p"><?=$category["cat_title"]?></a>
+                            <a href="/category.php?id=<?=$category["cat_id"]?>" class="search_p"><span><?=$category["cat_title"]?></span></a>
                             <ul class="vertical menu">
                                 <li><a href="/subcategory.php?id=<?=15?>">Дорослі</a></li>
                                 <li><a href="/subcategory.php?id=<?=16?>">Діти</a></li>
@@ -73,7 +73,7 @@
                             </ul>
                     <?php elseif($category["cat_id"] == 4): ?>
                             <li>
-                            <a href="/category.php?id=<?=$category["cat_id"]?>" class="search_p"><?=$category["cat_title"]?></a>
+                            <a href="/category.php?id=<?=$category["cat_id"]?>" class="search_p"><span><?=$category["cat_title"]?></span></a>
                             <ul class="vertical menu">
                                 <li><a href="/subcategory.php?id=<?=18?>">Транспортні засоби</a></li>
                                 <li><a href="/subcategory.php?id=<?=19?>">Коштовності</a></li>
